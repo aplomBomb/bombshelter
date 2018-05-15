@@ -110,26 +110,6 @@ footer{
 	top: 40.625em;
 
 }
-#giRSS{
-	float: left;
-	display: inline-block;
-	margin: auto;
-	margin-left: 15.625em;
-	width: 31.25em;
-	height: auto;
-	box-shadow: 0em 0em 6.25em .75em black;
-	border-radius: 15% 5% 15% 5%;
-}
-#redditRSS{
-	float: right;
-	display: inline-block;
-	margin: auto;
-	margin-right: 15.625em;
-	width: 31.25em;
-	height: auto;
-	box-shadow: 0px 0px 6.25em .75em black;
-	border-radius: 5% 15% 5% 15%;
-}
 
 /* Class Styling */
 
