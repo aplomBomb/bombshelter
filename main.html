@@ -23,18 +23,34 @@
 						</address>
 				</header>	
 			</section>									
-			<main class="clearfix">
-				<div>
-					<section id="para1">
-						<p>
-								The BombShelter is the hub for all things happening in the Bomb universe.
-								blah blah blah blah blah blah blah blah
-								blah blah blah blah blah blah blah blah blah blah
-								blah blah blah blah blah blah blah blah blah
-						</p>
-					</section>
+			<main>
+				<ul class="mainFlexbox">
 					
-				</div>
+					<li class="flex-centerBar">
+						The BombShelter is the hub for all things happening in the Bomb universe.
+						blah blah blah blah blah blah blah blah
+						blah blah blah blah blah blah blah blah blah blah
+						blah blah blah blah blah blah blah blah blah
+					</li>
+					
+					<li class="flex-leftSidebar">			
+						<!-- Add a placeholder for the Twitch embed -->
+						<div id="twitch-embed"></div>
+
+						<!-- Load the Twitch embed script -->
+						<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+						<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+						<script type="text/javascript">
+						  new Twitch.Embed("twitch-embed", {
+							width: 400,
+							height: 400,
+							channel: "aplomBomb"
+						  });
+						</script>											
+					</li>
+					
+				</ul>
 			</main>
 			<a href="https://gameofbombs.com/landing" alt="8 Bit Bomb" title="Play Game of Bombs!" target="_blank">
 				<img src="assets/bombFinal.png" id="bomb">
