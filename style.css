@@ -11,6 +11,7 @@
 	transition: all .5s ease-in-out;
 	margin-bottom: 1.5625em;
 	margin-right: 1.5625em;
+	z-index: 10;
 }
 #bomb:hover {
 	transform: scale(2) rotate(-15deg) translatex(-2.5em) translatey(-60px) rotate(-360deg);
@@ -37,7 +38,6 @@ p {
 footer{
 	display: flex;
 	background-image: url("assets/fiNoWater2.png");
-	background-position: bottom 100%;
 	height: 20em;
 	
 }
@@ -60,12 +60,14 @@ ul {
 }
 #footerSpan {
 	position: absolute;
+	display: inline-block;
 	bottom: 1px;
 	left: 1px;
 	color: white;
 }
 #footerDiv{
 	position: absolute;
+	display: inline-block;
 	bottom: -10%;
 	width: 100%;
 
