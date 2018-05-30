@@ -6,13 +6,12 @@
 			<link rel="stylesheet" href="style.css">
 			<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
-			<script src="scripts.js"></script>
 		</head>
 		
 		<body>
 			<section id="title">
 				<header>
-					<h1><strong>This is the BombShelter</strong></h1>
+					<h1><strong>The BombShelter</strong></h1>
 						<address id="contactBox">
 							<a href="https://twitter.com/thebitbomber" alt="Link to Twitter Account" title="Check out my Twitter page!" target="_blank"> 
 								<img src="assets/twitterHeaderFinal.png" id="twitterHeader" class="contactLink">
@@ -24,30 +23,28 @@
 				</header>	
 			</section>									
 			<main>
+				
 				<ul class="mainFlexbox">
 					
-					<li class="flex-centerBar">
+					<li class="flex-centerColumn">
 						The BombShelter is the hub for all things happening in the Bomb universe.
 						blah blah blah blah blah blah blah blah
 						blah blah blah blah blah blah blah blah blah blah
 						blah blah blah blah blah blah blah blah blah
 					</li>
 					
-					<li class="flex-leftSidebar">			
-						<!-- Add a placeholder for the Twitch embed -->
-						<div id="twitch-embed"></div>
-
-						<!-- Load the Twitch embed script -->
-						<script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-						<!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-						<script type="text/javascript">
-						  new Twitch.Embed("twitch-embed", {
-							width: 400,
-							height: 400,
-							channel: "aplomBomb"
-						  });
-						</script>											
+					<li class="flex-leftColumn">			
+						<iframe
+							src="http://player.twitch.tv/?channel=bombvr&muted=yes"
+							height="300"
+							width="400"
+							frameborder="<frameborder>"
+							scrolling="<scrolling>"
+							allowfullscreen="<allowfullscreen>">
+						</iframe>										
+					</li>
+					<li class="flex-rightColumn">
+						
 					</li>
 					
 				</ul>
