@@ -58,20 +58,6 @@ ul {
 	background-position-y: bottom;
 
 }
-#footerSpan {
-	position: absolute;
-	display: inline-block;
-	bottom: 1px;
-	left: 1px;
-	color: white;
-}
-#footerDiv{
-	position: absolute;
-	display: inline-block;
-	bottom: -10%;
-	width: 100%;
-
-}
 #twitch-embed {
 	margin-right: 0;
 	padding-right: 0;
@@ -84,6 +70,23 @@ ul {
 }
 #contactBox {
 	align-self: center;
+	align-items: center;
+}
+#twitchLiveStream {
+	box-shadow: -12px -12px 30px black;
+	margin: 2em 2em 2em 2em;
+}
+#youtubeVid1 {
+	box-shadow: 12px -12px 30px black;
+	margin: 2em 2em 2em 2em;
+}
+#twitchVid2 {
+	box-shadow: -12px -12px 30px black;
+	margin: 2em 2em 2em 2em;
+}
+#youtubeVid2 {
+	box-shadow: 12px -12px 30px black;
+	margin: 2em 2em 2em 2em;
 }
 
 /* Class Styling */
@@ -103,6 +106,8 @@ ul {
 	padding-right: 0;
 	margin-left: 0;
 	margin-right: 0;
+	height: 20em;
+	overflow: auto;
 }
 .flex-leftColumn {
 	flex-grow: 1;
