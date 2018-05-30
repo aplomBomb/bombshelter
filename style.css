@@ -91,20 +91,28 @@ ul {
 
 .flex-centerColumn {
 	flex-grow: 2;
-	justify-content: flex-center;
+	order: 2;
+	align-self: flex-start;
 
 }
 .mainFlexbox {
 	display: flex;
-	justify-content: space-around;
-	flex-direction: row-reverse;
-	width: 80%;
+	align-content: space-between;
+	flex-direction: row;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 .flex-leftColumn {
 	flex-grow: 1;
+	order: 1;
+	padding-left: 10%;
 }
 .flex-rightColumn {
 	flex-grow: 1;
+	order: 3;
+	padding-right: 10%;
 }
 .contactLink {
 	padding: 0;
