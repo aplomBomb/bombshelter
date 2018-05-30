@@ -19,6 +19,7 @@
 
 /* Generic Styling */
 body {
+	background: purple;
 	background-image: linear-gradient(yellow, purple, black);
 }
 h1 {
@@ -70,19 +71,19 @@ ul {
 	max-height: 4em;
 }
 #twitchLiveStream {
-	box-shadow: -12px -12px 30px black;
+	box-shadow: -8px -12px 30px black;
 	margin: 2em 2em 2em 2em;
 }
 #youtubeVid1 {
-	box-shadow: 12px -12px 30px black;
+	box-shadow: 8px -12px 30px black;
 	margin: 2em 2em 2em 2em;
 }
 #twitchVid2 {
-	box-shadow: -12px -12px 30px black;
+	box-shadow: -8px -12px 30px black;
 	margin: 2em 2em 2em 2em;
 }
 #youtubeVid2 {
-	box-shadow: 12px -12px 30px black;
+	box-shadow: 8px -12px 30px black;
 	margin: 2em 2em 2em 2em;
 }
 #contactBox {
