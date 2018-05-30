@@ -19,9 +19,7 @@
 
 /* Generic Styling */
 body {
-
 	background-image: linear-gradient(yellow, purple, black);
-
 }
 h1 {
 	font-size: 8em;
@@ -33,13 +31,14 @@ h1 {
 }
 p {
 	color: white;
+	font-size: 2em;
+	font-family: cairo;
+	line-height: 1.5;
 }
 
 footer{
-	display: flex;
-	background-image: url("assets/fiNoWater2.png");
-	height: 20em;
-	
+	background-image: url("assets/fiNoWater2.png");	
+	min-height: 20em;
 }
 
 ul {
@@ -52,25 +51,21 @@ ul {
 #title {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	height: 20em;
+	min-height: 25em;
 	background-image: url("assets/fiNoWater2Flip.png");
 	background-position-y: bottom;
-
 }
 #twitch-embed {
 	margin-right: 0;
 	padding-right: 0;
 }
 #discordHeader {
-	height: 3em;
+	max-height: 3em;
 }
 #twitterHeader {
-	height: 3em;
-}
-#contactBox {
-	align-self: center;
-	align-items: center;
+	max-height: 3em;
 }
 #twitchLiveStream {
 	box-shadow: -12px -12px 30px black;
@@ -88,6 +83,9 @@ ul {
 	box-shadow: 12px -12px 30px black;
 	margin: 2em 2em 2em 2em;
 }
+#contactBox {
+	align-content: center;
+}
 
 /* Class Styling */
 
@@ -96,6 +94,8 @@ ul {
 	flex-grow: 2;
 	order: 2;
 	align-self: flex-start;
+	margin-left: 2em;
+	margin-right: 2em;
 
 }
 .mainFlexbox {
@@ -106,8 +106,8 @@ ul {
 	padding-right: 0;
 	margin-left: 0;
 	margin-right: 0;
-	height: 20em;
-	overflow: auto;
+	min-height: 20em;
+
 }
 .flex-leftColumn {
 	flex-grow: 1;
@@ -120,8 +120,7 @@ ul {
 	padding-right: 10%;
 }
 .contactLink {
-	padding: 0;
-	margin: 0;
+	align-self: flex-end;
 }
 
 
