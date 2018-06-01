@@ -70,27 +70,50 @@ ul {
 #twitterHeader {
 	max-height: 4em;
 }
-#twitchLiveStream {
-	box-shadow: -8px -12px 30px black;
-	margin: 2em 2em 2em 2em;
-}
-#youtubeVid1 {
-	box-shadow: 8px -12px 30px black;
-	margin: 2em 2em 2em 2em;
-}
-#twitchVid2 {
-	box-shadow: -8px -12px 30px black;
-	margin: 2em 2em 2em 2em;
-}
-#youtubeVid2 {
-	box-shadow: 8px -12px 30px black;
-	margin: 2em 2em 2em 2em;
-}
 #contactBox {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-top: 1em;
+}
+#twitchBladeClosed {
+	position: fixed;
+	left: 0;
+	top: 50vh;
+}
+#youtubeBladeClosed {
+	position: fixed;
+	right: 0;
+	top: 50vh;
+}
+#twitchIcon {
+	position: relative;
+	left: -1em;
+	max-height: 4em;
+}
+#youtubeIcon {
+	position: relative;
+	max-height: 4em;
+	right: -.75em;
+}
+#twitchBladeOpen {
+	position: fixed;
+	top: 0;
+	width: 25vw;
+	height: 100vh;
+	background-color: black;
+	opacity: .5;
+	z-index: 100;
+}
+#youtubeBladeOpen {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25vw;
+	height: 100vh;
+	background-color: black;
+	opacity: .5;
+	z-index: 101;
 }
 
 /* Class Styling */
@@ -127,6 +150,14 @@ ul {
 }
 .contactLink {
 	align-self: flex-end;
+}
+.twitchEmbeds {
+	box-shadow: -8px -12px 30px black;
+	margin: 2em 2em 2em 2em;
+}
+.youtubeEmbeds {
+	box-shadow: 8px -12px 30px black;
+	margin: 2em 2em 2em 2em;
 }
 
 
