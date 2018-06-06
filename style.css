@@ -76,44 +76,16 @@ ul {
 	justify-content: center;
 	padding-top: 1em;
 }
-#twitchBladeClosed {
-	position: fixed;
-	left: 0;
-	top: 50vh;
-}
-#youtubeBladeClosed {
-	position: fixed;
-	right: 0;
-	top: 50vh;
-}
 #twitchIcon {
-	position: relative;
+	position: fixed;
 	left: -1em;
-	max-height: 4em;
+	top: 50vh;
+	max-height: 3.5em;
 }
 #youtubeIcon {
-	position: relative;
+	position: fixed;
 	max-height: 4em;
 	right: -.75em;
-}
-#twitchBladeOpen {
-	position: fixed;
-	top: 0;
-	width: 25vw;
-	height: 100vh;
-	background-color: black;
-	opacity: .5;
-	z-index: 100;
-}
-#youtubeBladeOpen {
-	position: fixed;
-	top: 0;
-	right: 0;
-	width: 25vw;
-	height: 100vh;
-	background-color: black;
-	opacity: .5;
-	z-index: 101;
 }
 
 /* Class Styling */
@@ -152,13 +124,72 @@ ul {
 	align-self: flex-end;
 }
 .twitchEmbeds {
+	flex-shrink: 0;
+	top: 20%;
+	left: 5%;
 	box-shadow: -8px -12px 30px black;
 	margin: 2em 2em 2em 2em;
+	justify-self: center;
+	align-self: center;
 }
 .youtubeEmbeds {
+	flex-shrink: 0;
+	top: 20%;
+	right: 5%;
 	box-shadow: 8px -12px 30px black;
 	margin: 2em 2em 2em 2em;
+	justify-self: center;
+	align-self: center;
 }
+.leftSideNav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	background-color: black;
+	z-index: 100;
+	overflow: auto;
+	transition: .4s;
+	box-shadow: 30px 5px 40px black;
+	border-top-right-radius: 1%;
+	border-bottom-right-radius: 1%;
+}
+.leftSideNav .closebtnLeft {
+	position: absolute;
+	top: 0;
+	right: 1em;
+	font-size: 2em;
+	margin-left: 4.5em;
+}
+.rightSideNav {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	background-color: black;
+	z-index: 100;
+	overflow: auto;
+	transition: .4s;
+	box-shadow: -30px 5px 40px black;
+	border-top-left-radius: 1%;
+	border-bottom-left-radius: 1%;
+}
+.rightSideNav .closebtnRight {
+	position: absolute;
+	top: 0;
+	left: 1em;
+	font-size: 2em;
+	margin-right: 4.5em;
+}
+.hidden {
+	display: none;
+	transition: .5s;
+}
+
 
 
 /* Float Clearfix 
