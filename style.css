@@ -76,13 +76,16 @@ ul {
 	position: fixed;
 	left: -1em;
 	top: 50vh;
-	max-height: 3.5em;
+	max-height: 7em;
 }
 #youtubeIcon {
 	position: fixed;
 	top: 50vh;
-	max-height: 4em;
+	max-height: 8em;
 	right: -.75em;
+}
+#twitchCloseBtn {
+	height: 1em;
 }
 
 /* Class Styling */
@@ -93,6 +96,7 @@ ul {
 	align-self: flex-start;
 	margin-left: 2em;
 	margin-right: 2em;
+	max-width: 50vw;
 
 }
 .mainFlexbox {
@@ -218,6 +222,17 @@ ul {
 @media only screen and (max-width: 800px) {
 	p {
 		font-size: 1em;
+	}
+}
+@media only screen and (max-width: 800px) {
+	#title {
+		min-height: 17em;
+	}
+}
+@media only screen and (max-width: 1175px) {
+	.twitchEmbeds, .youtubeEmbeds {
+		height: 200px;
+		width: 300px;
 	}
 }
 
