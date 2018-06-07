@@ -7,6 +7,7 @@
 			<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
 			<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"></link>
+			<script src="navControl.js"></script>
 		</head>
 		
 		<body>
@@ -24,7 +25,87 @@
 				</header>	
 			</section>									
 			<main>
-				
+				<div id="twitchBladeOpen" class="leftSideNav leftNavStart">
+					<a href="javascript:void(0)" class="closebtnLeft" onclick="closeNavLeft()">&times;</a>	
+					<iframe 
+						src="https://player.twitch.tv/?channel=bombvr&autoplay=false" 
+						frameborder="1" 
+						allowfullscreen="true" 
+						scrolling="no" 
+						height="300" 
+						width="400"
+						class="twitchEmbeds">
+					</iframe>
+					<iframe 
+						src="https://player.twitch.tv/?channel=patty&autoplay=false" 
+						frameborder="1" 
+						allowfullscreen="true" 
+						scrolling="no" 
+						height="300" 
+						width="400"
+						class="twitchEmbeds">
+					</iframe>
+					<iframe 
+						src="https://player.twitch.tv/?channel=jewelsvr&autoplay=false" 
+						frameborder="1" 
+						allowfullscreen="true" 
+						scrolling="no" 
+						height="300" 
+						width="400"
+						class="twitchEmbeds">
+					</iframe>
+					<iframe 
+						src="https://player.twitch.tv/?channel=DrDisRespectLIVE&autoplay=false" 
+						frameborder="1" 
+						allowfullscreen="true" 
+						scrolling="no" 
+						height="300" 
+						width="400"
+						class="twitchEmbeds">
+					</iframe>																						
+				</div>
+				<a href="javascript:void(0)" class="openBtnLeft" onclick="openNavLeft()"><img  id="twitchIcon" src="assets/twitchIcon.png" alt="Twitch Videos" title="Bombshelter Twitch Content"></a>	
+
+
+
+				<div id="youtubeBladeOpen" class="rightSideNav rightNavStart">
+					<a href="javascript:void(0)" class="closebtnRight" onclick="closeNavRight()">&times;</a>
+						<iframe 
+							width="400" 
+							height="300" 
+							src="https://www.youtube.com/embed/A-m5X5ElDqY?rel=0" 
+							frameborder="1" 
+							allow="0; 
+							encrypted-media" allowfullscreen
+							class="youtubeEmbeds">
+						</iframe>
+						<iframe 
+							width="400" 
+							height="300" 
+							src="https://www.youtube.com/embed/BUS99d4NIHA?rel=0" 
+							frameborder="1" 
+							allow="0; encrypted-media" allowfullscreen
+							class="youtubeEmbeds">
+						</iframe>
+						<iframe 
+							width="400" 
+							height="300" 
+							src="https://www.youtube.com/embed/p4Il4FRZmuA" 
+							frameborder="1" 
+							allow="0; encrypted-media" allowfullscreen
+							class="youtubeEmbeds">
+						</iframe>	
+						<iframe 
+							width="400" 
+							height="300" 
+							src="https://www.youtube.com/embed/WEMAvnkHA9U" 
+							frameborder="1" 
+							allow="0; encrypted-media" allowfullscreen
+							class="youtubeEmbeds">
+						</iframe>																		
+				</div>
+				<a href="javascript:void(0)" class="openBtnRight" onclick="openNavRight()"><img  id="youtubeIcon" src="assets/youtubeIcon.png" alt="Youtube Videos" title="Bombshelter Youtube Content"></a>	
+
 				<ul class="mainFlexbox">
 					
 					<li class="flex-centerColumn">
@@ -52,43 +133,10 @@
 					</li>
 					
 					<li class="flex-leftColumn">			
-						<iframe 
-							src="https://player.twitch.tv/?channel=bombvr" 
-							frameborder="1" 
-							allowfullscreen="true" 
-							scrolling="no" 
-							height="300" 
-							width="400"
-							id="twitchLiveStream">
-						</iframe>
-						<iframe 
-							src="https://player.twitch.tv/?autoplay=false&video=v264650108" 
-							frameborder="1" 
-							allowfullscreen="true" 
-							scrolling="no" 
-							height="300" 
-							width="400"
-							id="twitchVid2">
-						</iframe>								
+												
 					</li>
 					<li class="flex-rightColumn">
-							<iframe 
-								width="400" 
-								height="300" 
-								src="https://www.youtube.com/embed/A-m5X5ElDqY?rel=0" 
-								frameborder="1" 
-								allow="0; 
-								encrypted-media" allowfullscreen
-								id="youtubeVid1">
-							</iframe>
-							<iframe 
-								width="400" 
-								height="300" 
-								src="https://www.youtube.com/embed/BUS99d4NIHA?rel=0" 
-								frameborder="1" 
-								allow="0; encrypted-media" allowfullscreen
-								id="youtubeVid2">
-							</iframe>
+							
 					</li>
 					
 				</ul>
