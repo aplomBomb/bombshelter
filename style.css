@@ -84,16 +84,16 @@ ul {
 }
 #youtubeIcon {
 	position: fixed;
+	top: 50vh;
 	max-height: 4em;
 	right: -.75em;
 }
 
 /* Class Styling */
 
-
 .flex-centerColumn {
-	flex-grow: 2;
 	order: 2;
+	justify-self: center;
 	align-self: flex-start;
 	margin-left: 2em;
 	margin-right: 2em;
@@ -159,9 +159,10 @@ ul {
 .leftSideNav .closebtnLeft {
 	position: absolute;
 	top: 0;
-	right: 1em;
-	font-size: 2em;
+	right: .2em;
+	font-size: 5em;
 	margin-left: 4.5em;
+	color: purple;
 }
 .rightSideNav {
 	display: flex;
@@ -181,15 +182,20 @@ ul {
 .rightSideNav .closebtnRight {
 	position: absolute;
 	top: 0;
-	left: 1em;
-	font-size: 2em;
-	margin-right: 4.5em;
+	left: .2em;
+	font-size: 5em;
+	margin: none;
+	padding: none;
+	color: purple;
 }
-.hidden {
-	display: none;
-	transition: .5s;
+.leftNavStart {
+	width: 0vw;
+}
+.rightNavStart {
+	width: 0vw;
 }
 
+/* Pseudo Stuffs */
 
 
 /* Float Clearfix 
