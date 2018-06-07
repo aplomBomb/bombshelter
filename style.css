@@ -153,13 +153,14 @@ ul {
 	border-top-right-radius: 1%;
 	border-bottom-right-radius: 1%;
 }
-.leftSideNav .closebtnLeft {
+.leftSideNav #twitchIconClose {
 	position: absolute;
-	top: 0;
+	top: 50vh;
 	right: 0;
-	font-size: 5em;
+	max-height: 7em;
 	margin-left: 4.5em;
 	color: purple;
+	z-index: 200;
 }
 .rightSideNav {
 	display: flex;
@@ -176,11 +177,11 @@ ul {
 	border-top-left-radius: 1%;
 	border-bottom-left-radius: 1%;
 }
-.rightSideNav .closebtnRight {
+.rightSideNav #youtubeIconClose {
 	position: absolute;
-	top: 0;
+	top: 50vh;
 	left: .2em;
-	font-size: 5em;
+	max-height: 8em;
 	margin: none;
 	padding: none;
 	color: purple;
