@@ -56,10 +56,7 @@ ul {
 	background-image: url("assets/fiNoWater2Flip.png");
 	background-position-y: bottom;
 }
-#twitch-embed {
-	margin-right: 0;
-	padding-right: 0;
-}
+
 #discordHeader {
 	max-height: 4em;
 }
@@ -125,21 +122,21 @@ ul {
 }
 .twitchEmbeds {
 	flex-shrink: 0;
-	top: 20%;
-	left: 5%;
 	box-shadow: -10px -12px 100px purple;
 	margin: 2em 2em 2em 2em;
 	justify-self: center;
 	align-self: center;
+	width: 800px;
+	height: 600px;
 }
 .youtubeEmbeds {
 	flex-shrink: 0;
-	top: 20%;
-	right: 5%;
 	box-shadow: 10px -12px 100px purple;
 	margin: 2em 2em 2em 2em;
 	justify-self: center;
 	align-self: center;
+	width: 800px;
+	height: 600px;
 }
 .leftSideNav {
 	display: flex;
@@ -151,7 +148,7 @@ ul {
 	background-color: black;
 	z-index: 100;
 	overflow: auto;
-	transition: .4s;
+	transition: .5s;
 	box-shadow: 30px 5px 40px black;
 	border-top-right-radius: 1%;
 	border-bottom-right-radius: 1%;
@@ -173,8 +170,8 @@ ul {
 	height: 100vh;
 	background-color: black;
 	z-index: 100;
-	overflow: auto;
-	transition: .4s;
+	overflow-y: auto;
+	transition: .5s;
 	box-shadow: -30px 5px 40px black;
 	border-top-left-radius: 1%;
 	border-bottom-left-radius: 1%;
