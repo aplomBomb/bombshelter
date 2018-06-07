@@ -10,7 +10,7 @@
 	height: 10%;
 }
 #bomb:hover {
-	transform: scale(2) rotate(-15deg) translatex(-2.5em) translatey(-60px) rotate(-360deg);
+	transform: scale(2) rotate(-15deg) translatex(-.5em) translatey(-15px) rotate(-360deg);
 }
 
 /* Generic Styling */
@@ -222,6 +222,7 @@ ul {
 @media only screen and (max-width: 800px) {
 	p {
 		font-size: 1em;
+		line-height: 1.2;
 	}
 }
 @media only screen and (max-width: 800px) {
