@@ -5,7 +5,14 @@ function openNavLeft() {
     document.getElementById("twitchBladeOpen").classList.remove("hidden");
     document.getElementById("twitchBladeOpen").style.position = "fixed";
     document.getElementById("twitchBladeOpen").style.left = "0";
-    document.getElementById("twitchBladeOpen").style.width = "30vw";
+    if (window.matchMedia("(max-width: 1800px)").matches) {
+        document.getElementById("twitchBladeOpen").style.width = "48vw";
+        /* the viewport is at most 1800 pixels wide */
+      } else {
+        document.getElementById("twitchBladeOpen").style.width = "30vw";
+        /* the viewport is more than 1800 pixels wide */
+      }
+    
 }
 
 function closeNavRight() {
@@ -15,7 +22,13 @@ function openNavRight() {
     document.getElementById("youtubeBladeOpen").classList.remove("hidden");
     document.getElementById("youtubeBladeOpen").style.position = "fixed";
     document.getElementById("youtubeBladeOpen").style.right = "0";
-    document.getElementById("youtubeBladeOpen").style.width = "30vw";
+    if (window.matchMedia("(max-width: 1800px)").matches) {
+        document.getElementById("youtubeBladeOpen").style.width = "48vw";
+        /* the viewport is at most 1800 pixels wide */
+      } else {
+        document.getElementById("youtubeBladeOpen").style.width = "30vw";
+        /* the viewport is more than 1800 pixels wide */
+      }
 }
 
 
