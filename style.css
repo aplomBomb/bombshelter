@@ -72,14 +72,14 @@ ul {
 #twitchIcon {
 	position: fixed;
 	left: -1em;
-	top: 50vh;
-	max-height: 5em;
+	top: .80%;
+	max-height: 7em;
 	transition: all .8s ease-in-out;
 }
 #youtubeIcon {
 	position: fixed;
-	top: 50vh;
-	max-height: 6em;
+	top: 0;
+	max-height: 8em;
 	right: -.75em;
 	transition: all .8s ease-in-out;
 }
