@@ -73,12 +73,12 @@ ul {
 	position: fixed;
 	left: -1em;
 	top: 50vh;
-	max-height: 7em;
+	max-height: 5em;
 }
 #youtubeIcon {
 	position: fixed;
 	top: 50vh;
-	max-height: 8em;
+	max-height: 6em;
 	right: -.75em;
 }
 #twitchCloseBtn {
@@ -157,9 +157,8 @@ ul {
 	position: absolute;
 	top: 50vh;
 	right: 0;
-	max-height: 7em;
+	max-height: 5em;
 	margin: 0;
-	color: purple;
 	z-index: 200;
 }
 .rightSideNav {
@@ -171,7 +170,7 @@ ul {
 	height: 100vh;
 	background-color: black;
 	z-index: 100;
-	overflow-y: auto;
+	overflow: auto;
 	transition: .5s;
 	box-shadow: -30px 5px 40px black;
 	border-top-left-radius: 1%;
@@ -180,11 +179,10 @@ ul {
 .rightSideNav #youtubeIconClose {
 	position: absolute;
 	top: 50vh;
-	left: .2em;
-	max-height: 8em;
-	margin: none;
-	padding: none;
-	color: purple;
+	right: -1em;
+	max-height: 6em;
+	margin: 0;
+	z-index: 200;
 }
 .leftNavStart {
 	width: 0vw;
