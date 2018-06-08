@@ -74,12 +74,14 @@ ul {
 	left: -1em;
 	top: 50vh;
 	max-height: 5em;
+	transition: all .8s ease-in-out;
 }
 #youtubeIcon {
 	position: fixed;
 	top: 50vh;
 	max-height: 6em;
 	right: -.75em;
+	transition: all .8s ease-in-out;
 }
 #twitchCloseBtn {
 	height: 1em;
@@ -149,17 +151,20 @@ ul {
 	z-index: 100;
 	overflow: auto;
 	transition: .5s;
+	transition-delay: .85s;
 	box-shadow: 30px 5px 40px black;
 	border-top-right-radius: 1%;
 	border-bottom-right-radius: 1%;
 }
 .leftSideNav #twitchIconClose {
-	position: absolute;
+	position: fixed;
+	left: -10vw;
 	top: 50vh;
-	right: 0;
 	max-height: 5em;
 	margin: 0;
 	z-index: 200;
+	transition: all 1.4s ease-in-out;
+
 }
 .rightSideNav {
 	display: flex;
@@ -172,17 +177,19 @@ ul {
 	z-index: 100;
 	overflow: auto;
 	transition: .5s;
+	transition-delay: .85s;
 	box-shadow: -30px 5px 40px black;
 	border-top-left-radius: 1%;
 	border-bottom-left-radius: 1%;
 }
 .rightSideNav #youtubeIconClose {
-	position: absolute;
+	position: fixed;
 	top: 50vh;
-	right: -1em;
+	right: -12em;
 	max-height: 6em;
 	margin: 0;
 	z-index: 200;
+	transition: all 1.4s ease-in-out;
 }
 .leftNavStart {
 	width: 0vw;
