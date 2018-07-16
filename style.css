@@ -29,8 +29,8 @@ h1 {
 	text-shadow: 0px 10px 30px yellow;
 }
 p {
-	color: white;
-	font-size: 2em;
+	color:seashell;
+	font-size: 1.2em;
 	font-family: cairo;
 	line-height: 1.5;
 }
@@ -96,6 +96,8 @@ ul {
 	margin-left: 2em;
 	margin-right: 2em;
 	max-width: 50vw;
+	padding-left: auto;
+	padding-right: auto;
 
 }
 .mainFlexbox {
@@ -122,6 +124,7 @@ ul {
 .contactLink {
 	align-self: flex-end;
 }
+/*properties for all twitch imbed videos*/
 .twitchEmbeds {
 	flex-shrink: 0;
 	box-shadow: -10px -12px 100px purple;
@@ -131,6 +134,7 @@ ul {
 	width: 960px;
 	height: 720px;
 }
+/*properties for all youtube imbed videos*/
 .youtubeEmbeds {
 	flex-shrink: 0;
 	box-shadow: 10px -12px 100px purple;
@@ -140,6 +144,7 @@ ul {
 	width: 960px;
 	height: 720px;
 }
+/*setting left side nav initial properties*/
 .leftSideNav {
 	display: flex;
 	flex-direction: column;
@@ -166,6 +171,7 @@ ul {
 	transition: all .8s ease-in-out;
 
 }
+/*setting right side nav initial properties*/
 .rightSideNav {
 	display: flex;
 	flex-direction: column;
@@ -191,13 +197,19 @@ ul {
 	z-index: 200;
 	transition: all .8s ease-in-out;
 }
+/*starting position for slides*/
 .leftNavStart {
 	width: 0vw;
 }
 .rightNavStart {
 	width: 0vw;
 }
-
+.noscroll {
+	overflow: hidden;
+}
+.scroll {
+	overflow: auto;
+}
 /* Pseudo Stuffs */
 
 
@@ -233,6 +245,8 @@ ul {
 		min-height: 17em;
 	}
 }
+
+/* responsive video player sizes in slide navs */
 @media only screen and (max-width: 1240px) {
 	.twitchEmbeds, .youtubeEmbeds {
 		height: 600px;
