@@ -76,6 +76,9 @@ ul {
 	max-height: 7em;
 	transition: all .4s ease-in-out;
 }
+#twitchIcon:hover {
+	transform: scale(1.2) translatex(.5em);
+}
 #youtubeIcon {
 	position: fixed;
 	top: .80%;
@@ -83,14 +86,21 @@ ul {
 	right: -.75em;
 	transition: all .4s ease-in-out;
 }
+#youtubeIcon:hover {
+	transform: scale(1.2) translatex(-.5em);
+}
 #twitchCloseBtn {
 	height: 1em;
+}
+#twitterFollowButton {
+
 }
 
 /* Class Styling */
 
 .flex-centerColumn {
 	order: 2;
+	flex-grow: 2;
 	justify-self: center;
 	align-self: flex-start;
 	margin-left: 2em;
@@ -98,6 +108,7 @@ ul {
 	max-width: 50vw;
 	padding-left: auto;
 	padding-right: auto;
+	
 
 }
 .mainFlexbox {
@@ -114,12 +125,12 @@ ul {
 .flex-leftColumn {
 	flex-grow: 1;
 	order: 1;
-	padding-left: 10%;
+	padding-left: 5%;
 }
 .flex-rightColumn {
 	flex-grow: 1;
 	order: 3;
-	padding-right: 10%;
+	padding-right: 5%;
 }
 .contactLink {
 	align-self: flex-end;
