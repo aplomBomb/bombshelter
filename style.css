@@ -15,10 +15,6 @@
 
 /* Generic Styling */
 body {
-	background-image: url("assets/pixelBrickWall.jpg");
-	background-attachment: fixed;
-    background-position: center;
-	background-repeat: repeat;
 	
 }
 h1 {
@@ -50,6 +46,12 @@ ul {
 }
 
 /* ID Styling */
+#background {
+	background-image: url("assets/pixelBrickWall.jpg");
+	background-attachment: fixed;
+    background-position: center;
+	background-repeat: repeat;
+}
 #title {
 	display: flex;
 	flex-direction: column;
