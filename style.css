@@ -83,6 +83,7 @@ ul {
 	top: .80%;
 	max-height: 7em;
 	transition: all .4s ease-in-out;
+	z-index: 2;
 }
 #twitchIcon:hover {
 	transform: scale(1.2) translatex(.5em);
@@ -93,6 +94,7 @@ ul {
 	max-height: 7em;
 	right: -.75em;
 	transition: all .4s ease-in-out;
+	z-index: 2;
 }
 #youtubeIcon:hover {
 	transform: scale(1.2) translatex(-.5em);
@@ -110,34 +112,22 @@ ul {
 	order: 2;
 	flex-grow: 2;
 	justify-self: center;
-	align-self: flex-start;
 	margin-left: 2em;
 	margin-right: 2em;
-	max-width: 50vw;
 	padding-left: auto;
-	padding-right: auto;
-	
+	padding-right: auto;	
 
 }
 .mainFlexbox {
 	display: flex;
-	align-content: space-between;
+	align-content: center;
 	flex-direction: row;
 	padding-left: 0;
 	padding-right: 0;
 	margin-left: 0;
 	margin-right: 0;
 	min-height: 20em;
-}
-.flex-leftColumn {
-	flex-grow: 1;
-	order: 1;
-	padding-left: 5%;
-}
-.flex-rightColumn {
-	flex-grow: 1;
-	order: 3;
-	padding-right: 5%;
+	max-width: 60vw;
 }
 .contactLink {
 	align-self: flex-end;
@@ -231,9 +221,51 @@ ul {
 .scroll {
 	overflow: auto;
 }
+.wrapper {
+	/* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+   height: 100vh;
+   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+   overflow-x: hidden;
+   /* Enable scrolling on the page. */
+   overflow-y: auto;
+   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+   perspective: 2px;
+}
+
+.section {
+	/* Needed for children to be absolutely positioned relative to the parent. */
+	position: relative;
+	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	height: 50vh;
+}
 /* Pseudo Stuffs */
-
-
+.parallax::after {
+	/* Display and position the pseudo-element */
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  
+	/* Move the pseudo-element back away from the camera,
+	 * then scale it back up to fill the viewport.
+	 * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+	transform: translateZ(-1px) scale(1.5);
+	/* Force the background image to fill the whole element. */
+	background-size: 100%;
+	/* Keep the image from overlapping sibling elements. */
+	z-index: -1;
+}
+.bg1::after {
+	background-image: url('https://placekitten.com/g/900/700');
+	background-repeat: no-repeat;
+}  
+.bg2::after {
+	background-image: url('https://placekitten.com/g/800/600');
+	background-repeat: no-repeat;
+}
 /* Float Clearfix 
 .clearfix:after {
     content: "";
