@@ -15,8 +15,11 @@
 
 /* Generic Styling */
 body {
-	background: purple;
-	background-image: linear-gradient(yellow, purple, black);
+	background-image: url("assets/pixelBrickWall.jpg");
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+	
 }
 h1 {
 	font-size: 8em;
@@ -26,7 +29,8 @@ h1 {
 	padding: 0%;
 	margin: 0%;
 	border-bottom: 2px solid black;
-	text-shadow: 0px 10px 30px yellow;
+	background: radial-gradient(rgba(255,255,0,1), rgba(255,0,0,0));
+	border-radius: 10px;
 }
 p {
 	color:seashell;
@@ -37,7 +41,7 @@ p {
 
 footer{
 	background-image: url("assets/fiNoWater2.png");	
-	min-height: 20em;
+	min-height: 10em;
 }
 
 ul {
@@ -46,7 +50,6 @@ ul {
 }
 
 /* ID Styling */
-
 #title {
 	display: flex;
 	flex-direction: column;
@@ -59,6 +62,7 @@ ul {
 
 #discordHeader {
 	max-height: 4em;
+	
 }
 #twitterHeader {
 	max-height: 4em;
@@ -68,6 +72,8 @@ ul {
 	align-items: center;
 	justify-content: center;
 	padding-top: 1em;
+	position: sticky;
+	top: 0;
 }
 #twitchIcon {
 	position: fixed;
@@ -120,7 +126,6 @@ ul {
 	margin-left: 0;
 	margin-right: 0;
 	min-height: 20em;
-
 }
 .flex-leftColumn {
 	flex-grow: 1;
@@ -134,6 +139,9 @@ ul {
 }
 .contactLink {
 	align-self: flex-end;
+	background: radial-gradient(rgba(255,255,0,1), rgba(255,0,0,0));
+	border-radius: 25px;
+	
 }
 /*properties for all twitch imbed videos*/
 .twitchEmbeds {
