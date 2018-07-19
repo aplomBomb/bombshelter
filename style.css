@@ -15,15 +15,23 @@
 
 /* Generic Styling */
 body {
-	
+	padding: 0;
+	margin: 0;
+}
+header {
+	padding: 0;
+	margin: 0;
+}
+main {
+	padding: 0;
+	margin: 0;
 }
 h1 {
 	font-size: 8em;
 	color: black;
 	font-weight: bold;	
 	font-family: bangers, cursive;
-	padding: 0%;
-	margin: 0%;
+	
 	border-bottom: 2px solid black;
 	background: radial-gradient(rgba(255,255,0,1), rgba(255,0,0,0));
 	border-radius: 10px;
@@ -38,20 +46,16 @@ p {
 footer{
 	background-image: url("assets/fiNoWater2.png");	
 	min-height: 10em;
+	padding: 0;
+	margin: 0;
 }
 
 ul {
 	list-style-type: none;
-
+	padding: 0;
 }
 
 /* ID Styling */
-#background {
-	background-image: url("assets/pixelBrickWall.jpg");
-	background-attachment: fixed;
-    background-position: center;
-	background-repeat: repeat;
-}
 #title {
 	display: flex;
 	flex-direction: column;
@@ -59,7 +63,9 @@ ul {
 	align-items: center;
 	min-height: 25em;
 	background-image: url("assets/fiNoWater2Flip.png");
+	background-position-y: -20em;
 	background-position-y: bottom;
+	width: 100vw;
 }
 
 #discordHeader {
@@ -98,46 +104,41 @@ ul {
 	transform: scale(1.2) translatex(-.5em);
 }
 #twitchCloseBtn {
-	height: 1em;
+	width: 100vw;
 }
-#twitterFollowButton {
-
+#pic1 {
+	height: 100vh;
+}
+#pic2 {
+	height: 100vh;
+}
+#background {
+	margin: 0;
+	padding: 0;
 }
 
 /* Class Styling */
-
-.flex-centerColumn {
-	order: 2;
-	flex-grow: 2;
-	justify-self: center;
-	align-self: flex-start;
-	margin-left: 2em;
-	margin-right: 2em;
-	max-width: 50vw;
-	padding-left: auto;
-	padding-right: auto;
-	
-
+.parallax-window {
+    max-height: 100vh;
+	background: transparent;
 }
 .mainFlexbox {
 	display: flex;
-	align-content: space-between;
-	flex-direction: row;
-	padding-left: 0;
-	padding-right: 0;
-	margin-left: 0;
-	margin-right: 0;
-	min-height: 20em;
+	justify-content: center;
 }
-.flex-leftColumn {
-	flex-grow: 1;
-	order: 1;
-	padding-left: 5%;
+.flex-centerColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+
 }
-.flex-rightColumn {
-	flex-grow: 1;
-	order: 3;
-	padding-right: 5%;
+.noverflow {
+	padding: 0;
+	width: 100vw;
+	margin: 0;
 }
 .contactLink {
 	align-self: flex-end;
@@ -231,6 +232,7 @@ ul {
 .scroll {
 	overflow: auto;
 }
+
 /* Pseudo Stuffs */
 
 

@@ -2,7 +2,7 @@
 
 function closeNavLeft() {
 // enable scrolling of body when slide is retracted//
-    document.getElementById("background").style.overflowY = "auto";
+    document.getElementById("bod").className = "scroll";
 
     document.getElementById("twitchIconClose").style.transitionDelay = "0s";
     document.getElementById("twitchIconClose").style.transform = "scale(1, 1)";
@@ -15,7 +15,7 @@ function closeNavLeft() {
 // Function that handles the nav slide when the left slide open button is pressed//
 function openNavLeft() {
 // disable scrolling of body when slide is out//
-    document.getElementById("background").style.overflowY = "hidden";
+    document.getElementById("bod").className = "noscroll";
 
     document.getElementById("twitchIcon").style.transform = "rotate(360deg)";
 
@@ -35,7 +35,7 @@ function openNavLeft() {
 // Function that handles the nav slide when the right slide close button is pressed//
 function closeNavRight() {
 // enable scrolling of body when slide is retracted//
-    document.getElementById("background").style.overflowY = "auto";
+    document.getElementById("bod").className = "scroll";
 
     document.getElementById("youtubeIcon").style.transform = "rotate(360deg)";
     document.getElementById("youtubeIconClose").style.transitionDelay = "0s";
@@ -47,7 +47,7 @@ function closeNavRight() {
 // Function that handles the nav slide when the right slide open button is pressed//
 function openNavRight() {
 // disable scrolling of body when slide is out//
-    document.getElementById("background").style.overflowY = "hidden";
+    document.getElementById("bod").className = "noscroll";
 
     document.getElementById("youtubeIcon").style.transform = "rotate(-360deg)";
 
@@ -64,6 +64,3 @@ function openNavRight() {
     document.getElementById("youtubeIconClose").style.transform = "scale(1.4, 1.4)";   
     document.getElementById("youtubeIconClose").style.right = "75vw";     
 }
-
-
-
