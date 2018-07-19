@@ -54,6 +54,15 @@ ul {
 	list-style-type: none;
 	padding: 0;
 }
+li {
+	align-content: center;
+}
+li p {
+	position: relative;
+	top: 40%;
+	left: 20%;
+	width: 65%;
+}
 
 /* ID Styling */
 #title {
@@ -61,11 +70,13 @@ ul {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 25em;
+	min-height: 20em;
 	background-image: url("assets/fiNoWater2Flip.png");
 	background-position-y: -20em;
 	background-position-y: bottom;
 	width: 100vw;
+	background-repeat: repeat-x;
+	
 }
 
 #discordHeader {
@@ -107,19 +118,29 @@ ul {
 	width: 100vw;
 }
 #pic1 {
-	height: 100vh;
+	height: 125vh;
 }
 #pic2 {
-	height: 100vh;
+	height: 125vh;
+}
+#pic3 {
+	height: 125vh;
+}
+#pic4 {
+	height: 125vh;
+}
+#pic5 {
+	height: 125vh;
 }
 #background {
 	margin: 0;
 	padding: 0;
+	height: 20vh;
 }
 
 /* Class Styling */
 .parallax-window {
-    max-height: 100vh;
+    max-height: 125vh;
 	background: transparent;
 }
 .mainFlexbox {
@@ -142,7 +163,7 @@ ul {
 }
 .contactLink {
 	align-self: flex-end;
-	background: radial-gradient(rgba(255,255,0,1), rgba(255,0,0,0));
+	background: radial-gradient(rgba(230,230,250), rgba(255,0,0,0));
 	border-radius: 25px;
 	
 }
@@ -246,7 +267,12 @@ ul {
 
 
 /* Media Queries */
-
+/*
+@media only screen and (min-width: 2000px) {
+	h1 {
+		font-size: 4em;
+	}
+}*/
 @media only screen and (max-width: 800px) {
 	h1 {
 		font-size: 4em;
@@ -263,7 +289,7 @@ ul {
 		line-height: 1.2;
 	}
 }
-@media only screen and (max-width: 800px) {
+/*@media only screen and (max-width: 800px) {
 	#title {
 		min-height: 17em;
 	}
