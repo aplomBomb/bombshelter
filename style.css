@@ -31,7 +31,7 @@ h1 {
 }
 p {
 	color:seashell;
-	font-size: 1.2em;
+	font-size: 1.6em;
 	font-family: cairo;
 	line-height: 1.5;
 }
@@ -106,9 +106,28 @@ ul {
 #flex-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	align-content: space-around;
+	justify-items: center;
 	width: 80vw;
+}
+#flex-container, p {
+	display: flex;
+	justify-self: center;
+	text-align: center;
+}
+#para1 {
+	font-size: 2.5em;
+}
+#para2 {
+	
+}
+#para3 {
+	
+}
+#para4 {
+	
+}
+#para5 {
+	font-size: 4em;
 }
 
 /* Class Styling */
@@ -116,14 +135,10 @@ ul {
 	
 }
 .flex-centerColumn {
-	justify-self: center;
-	align-self: center;
+
 }
 .mainFlexbox {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
 }
 .contactLink {
 	align-self: flex-end;
@@ -226,17 +241,103 @@ ul {
    /* Enable scrolling on the page. */
    overflow-y: auto;
    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-   perspective: 2px;
+   perspective: 1px;
 }
 
-.section {
+.section1 {
+	/* Needed for children to be absolutely positioned relative to the parent. */
+	position: relative;
+	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	height: 115vh;
+	left: 10vw;
+	border: 3px solid black;
+}
+.section2 {
+	/* Needed for children to be absolutely positioned relative to the parent. */
+	position: relative;
+	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	height: 125vh;
+	left: 10vw;
+	top: 15em;
+	border: 3px solid black;
+}
+.section3 {
 	/* Needed for children to be absolutely positioned relative to the parent. */
 	position: relative;
 	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
 	height: 100vh;
+	left: 25vw;
+}
+.section4 {
+	/* Needed for children to be absolutely positioned relative to the parent. */
+	position: relative;
+	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	height: 100vh;
+	left: 25vw;
+}
+.section5 {
+	/* Needed for children to be absolutely positioned relative to the parent. */
+	position: relative;
+	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	height: 100vh;
+	left: 25vw;
 }
 /* Pseudo Stuffs */
-.parallax::after {
+.parallax1::after {
+	/* Display and position the pseudo-element */
+	content: " ";
+	position: absolute;
+	top: 30em;
+	right: 0;
+	bottom: 0;
+	left: -1.5em;
+  
+	/* Move the pseudo-element back away from the camera,
+	 * then scale it back up to fill the viewport.
+	 * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+	transform: translateZ(-1px) scale(2);
+	/* Force the background image to fill the whole element. */
+	background-size: 100%;
+	/* Keep the image from overlapping sibling elements. */
+	z-index: -1;
+}
+.parallax2::after {
+	/* Display and position the pseudo-element */
+	content: " ";
+	position: absolute;
+	top: 50em;
+	right: 0;
+	bottom: 0;
+	left: -15vw;
+  
+	/* Move the pseudo-element back away from the camera,
+	 * then scale it back up to fill the viewport.
+	 * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+	transform: translateZ(-1px) scale(1.5);
+	/* Force the background image to fill the whole element. */
+	background-size: 100%;
+	/* Keep the image from overlapping sibling elements. */
+	z-index: -1;
+}
+.parallax3::after {
+	/* Display and position the pseudo-element */
+	content: " ";
+	position: absolute;
+	top: 15em;
+	right: 0;
+	bottom: 0;
+	left: -25vw;
+  
+	/* Move the pseudo-element back away from the camera,
+	 * then scale it back up to fill the viewport.
+	 * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+	transform: translateZ(-1px) scale(1.5);
+	/* Force the background image to fill the whole element. */
+	background-size: 100%;
+	/* Keep the image from overlapping sibling elements. */
+	z-index: -1;
+}
+.parallax4::after {
 	/* Display and position the pseudo-element */
 	content: " ";
 	position: absolute;
@@ -248,6 +349,24 @@ ul {
 	/* Move the pseudo-element back away from the camera,
 	 * then scale it back up to fill the viewport.
 	 * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+	transform: translateZ(-1px) scale(2.5);
+	/* Force the background image to fill the whole element. */
+	background-size: 100%;
+	/* Keep the image from overlapping sibling elements. */
+	z-index: -1;
+}
+.parallax5::after {
+	/* Display and position the pseudo-element */
+	content: " ";
+	position: absolute;
+	top: 10em;
+	right: 0;
+	bottom: 0;
+	left: -30vw;
+  
+	/* Move the pseudo-element back away from the camera,
+	 * then scale it back up to fill the viewport.
+	 * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
 	transform: translateZ(-1px) scale(1.5);
 	/* Force the background image to fill the whole element. */
 	background-size: 100%;
@@ -255,11 +374,24 @@ ul {
 	z-index: -1;
 }
 .bg1::after {
-	background-image: url('assets/restStop.jpg');
+	background-image: url('assets/welcome2.png');
 	background-repeat: no-repeat;
+	width: 88vw;
 }  
 .bg2::after {
 	background-image: url('assets/discordHeaderFinal.svg');
+	background-repeat: no-repeat;
+}
+.bg3::after {
+	background-image: url('assets/discordHeaderFinal.svg');
+	background-repeat: no-repeat;
+}
+.bg4::after {
+	background-image: url('assets/hardWare.png');
+	background-repeat: no-repeat;
+}
+.bg5::after {
+	background-image: url('assets/handBeg.png');
 	background-repeat: no-repeat;
 }
 /* Float Clearfix 
@@ -272,7 +404,11 @@ ul {
 
 
 /* Media Queries */
-
+@media only screen and (min-width: 370px) {
+	.section {
+		height: 75vh;
+	}
+}
 @media only screen and (max-width: 800px) {
 	h1 {
 		font-size: 4em;
@@ -292,16 +428,6 @@ ul {
 @media only screen and (max-width: 800px) {
 	#title {
 		min-height: 17em;
-	}
-}
-@media only screen and (min-width: 780px) {
-	#flex-container {
-		width: 70vw;
-	}
-}
-@media only screen and (min-width: 1200px) {
-	#flex-container {
-		width: 60vw;
 	}
 }
 
