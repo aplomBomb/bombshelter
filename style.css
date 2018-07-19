@@ -38,7 +38,7 @@ p {
 
 footer{
 	background-image: url("assets/fiNoWater2.png");	
-	min-height: 10em;
+	min-height: 15em;
 }
 
 ul {
@@ -108,7 +108,7 @@ ul {
 	flex-direction: column;
 	justify-content: space-around;
 	align-content: space-around;
-	width: 50vw;
+	width: 80vw;
 }
 
 /* Class Styling */
@@ -233,14 +233,14 @@ ul {
 	/* Needed for children to be absolutely positioned relative to the parent. */
 	position: relative;
 	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
-	height: 50vh;
+	height: 100vh;
 }
 /* Pseudo Stuffs */
 .parallax::after {
 	/* Display and position the pseudo-element */
 	content: " ";
 	position: absolute;
-	top: 0;
+	top: 15em;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -292,6 +292,16 @@ ul {
 @media only screen and (max-width: 800px) {
 	#title {
 		min-height: 17em;
+	}
+}
+@media only screen and (min-width: 780px) {
+	#flex-container {
+		width: 70vw;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#flex-container {
+		width: 60vw;
 	}
 }
 
