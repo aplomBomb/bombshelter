@@ -248,6 +248,8 @@ li p {
 }
 .noscroll {
 	overflow: hidden;
+	position: relative;
+	height: 100%;
 }
 .scroll {
 	overflow: auto;
