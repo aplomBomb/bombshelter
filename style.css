@@ -55,6 +55,7 @@ li p {
 	font-size: 1.8em;
 	font-family: "Sigmar One", cursive;
 	color: lemonchiffon;
+	text-shadow: 3px 1px 5px black;
 }
 
 /* ID Styling */
@@ -265,18 +266,8 @@ li p {
 
 
 /* Media Queries */
-@media only screen and (max-width: 1400px) {
-	 li p {
-		font-size: 1.5em;
-		line-height: 1;
-	}
-}
-@media only screen and (min-width: 1800px) {
-	li p {
-		font-size: 2em;
-		line-height: 1.3;
-	}
-}
+
+
 @media only screen and (max-width: 800px) {
 	h1 {
 		font-size: 4em;
