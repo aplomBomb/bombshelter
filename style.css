@@ -53,7 +53,7 @@ li p {
 	top: 40%;
 	left: 19%;
 	width: 65%;
-	font-size: 1.8em;
+	font-size: 1em;
 	font-family: "Sigmar One", cursive;
 	color: lemonchiffon;
 	text-shadow: 3px 1px 5px black;
@@ -65,7 +65,7 @@ li p {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 20em;
+	min-height: 13em;
 	background-image: url("assets/fiNoWater2Flip.png");
 	background-position-y: -20em;
 	background-position-y: bottom;
@@ -94,8 +94,9 @@ li p {
 	position: fixed;
 	left: -1em;
 	top: .80%;
-	max-height: 7em;
+	max-height: 4em;
 	transition: all .4s ease-in-out;
+	z-index: 1;
 }
 #twitchIcon:hover {
 	transform: scale(1.2) translatex(.5em);
@@ -103,9 +104,10 @@ li p {
 #youtubeIcon {
 	position: fixed;
 	top: .80%;
-	max-height: 7em;
+	max-height: 4em;
 	right: -.75em;
 	transition: all .4s ease-in-out;
+	z-index: 1;
 }
 #youtubeIcon:hover {
 	transform: scale(1.2) translatex(-.5em);
@@ -207,9 +209,9 @@ li p {
 }
 .leftSideNav #twitchIconClose {
 	position: fixed;
-	left: -10vw;
+	left: -20vw;
 	top: 50vh;
-	max-height: 5em;
+	max-height: 3em;
 	margin: 0;
 	z-index: 200;
 	transition: all .8s ease-in-out;
@@ -236,7 +238,7 @@ li p {
 	position: fixed;
 	top: 50vh;
 	right: -12em;
-	max-height: 6em;
+	max-height: 3em;
 	margin: 0;
 	z-index: 200;
 	transition: all .8s ease-in-out;
@@ -274,7 +276,7 @@ li p {
 
 @media only screen and (max-width: 800px) {
 	h1 {
-		font-size: 4em;
+		font-size: 2em;
 	}
 }
 @media only screen and (max-width: 800px) {
@@ -309,11 +311,16 @@ li p {
 }
 @media only screen and (max-width: 870px) {
 	.twitchEmbeds, .youtubeEmbeds {
-		height: 300px;
-		width: 400px;
+		height: 400px;
+		width: 500px;
+	}
+}@media only screen and (max-width: 400px) {
+	.twitchEmbeds, .youtubeEmbeds {
+		height: 200px;
+		width: 300px;
 	}
 }
-@media only screen 
+/*@media only screen 
 and (max-device-width : 830px)  
 and (orientation : landscape) {
 	#title, #background {

@@ -25,10 +25,10 @@ function openNavLeft() {
 
     document.getElementById("twitchBladeOpen").style.position = "fixed";
     document.getElementById("twitchBladeOpen").style.left = "0";
-    document.getElementById("twitchBladeOpen").style.width = "85vw";
+    document.getElementById("twitchBladeOpen").style.width = "100vw";
     document.getElementById("twitchIconClose").style.transitionDelay =".5s";
     document.getElementById("twitchIconClose").style.transform = "scale(1.6, 1.6)";
-    document.getElementById("twitchIconClose").style.left = "75vw";
+    document.getElementById("twitchIconClose").style.left = "90vw";
 }
 
 // Function that handles the nav slide when the right slide close button is pressed//
@@ -58,8 +58,8 @@ function openNavRight() {
 
     document.getElementById("youtubeBladeOpen").style.position = "fixed";
     document.getElementById("youtubeBladeOpen").style.right = "0";
-    document.getElementById("youtubeBladeOpen").style.width ="85vw";
+    document.getElementById("youtubeBladeOpen").style.width ="100vw";
     document.getElementById("youtubeIconClose").style.transitionDelay = ".5s";   
     document.getElementById("youtubeIconClose").style.transform = "scale(1.4, 1.4)";   
-    document.getElementById("youtubeIconClose").style.right = "75vw";     
+    document.getElementById("youtubeIconClose").style.right = "90vw";     
 }
