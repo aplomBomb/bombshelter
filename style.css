@@ -33,8 +33,8 @@ h1 {
 	font-family: bangers, cursive;
 	
 	border-bottom: 2px solid black;
-	background: radial-gradient(rgba(255,255,0,1), rgba(255,0,0,0));
-	border-radius: 10px;
+	background: radial-gradient(rgba(230,230,250), rgba(255,0,0,0));
+	border-radius: 25px;
 }
 ul {
 	list-style-type: none;
@@ -49,7 +49,6 @@ li p {
 	top: 40%;
 	left: 19%;
 	width: 65%;
-	font-size: 1em;
 	font-family: "Sigmar One", cursive;
 	color: lemonchiffon;
 	text-shadow: 3px 1px 5px black;
@@ -62,17 +61,17 @@ li p {
 	justify-content: center;
 	align-items: center;
 	min-height: 13em;
-	background-image: url("assets/fiNoWater2Flip.png");
+	background-image: url("assets/starryNight.png");
 	background-position-y: -20em;
 	background-position-y: bottom;
 	width: 100vw;
-	background-repeat: repeat-x;
+	
 	
 }
 
 #discordHeader {
 	max-height: 4em;
-	margin-left: 15%;
+	margin-left: 0;
 }
 #twitterHeader {
 	max-height: 4em;
@@ -268,30 +267,90 @@ li p {
 
 
 /* Media Queries */
-
-
-@media only screen and (max-width: 800px) {
-	h1 {
-		font-size: 2em;
-	}
-}
-@media only screen and (max-width: 800px) {
-	#discordHeader, #twitterHeader  {
-		max-height: 3em;
-	}
-}
-@media only screen and (max-width: 800px) {
+/* Main Paragraph Queries*/
+@media only screen and (max-width: 400px) {
 	p {
 		font-size: 1em;
-		line-height: 1.2;
 	}
 }
-/*@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 630px) {
+	p {
+		font-size: 1.4em;
+	}
+}
+@media only screen and (min-width: 871px) {
+	p {
+		font-size: 1.8em;
+	}
+}
+@media only screen and (min-width: 1060px) {
+	p {
+		font-size: 2.2em;
+	}
+}
+/*Header and Social Media Link Queries*/
+@media only screen and (min-width: 200px) {
+	h1 {
+		font-size: 3em;
+	}
+}
+@media only screen and (min-width: 540px) {
+	h1 {
+		font-size: 5em;
+	}
+}
+@media only screen and (min-width: 820px) {
+	h1 {
+		font-size: 7em;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	h1 {
+		font-size: 10em;
+	}
+}
+@media only screen and (min-width: 820px) {
 	#title {
-		min-height: 17em;
+		height: 18em;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#title {
+		height: 22em;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#pic1 {
+		margin-top: 1em;
 	}
 }
 
+@media only screen and (min-width: 350px) {
+	#discordHeader, #twitterHeader {
+		max-height: 2.6em;
+		position: relative;
+		top: -3.2em;
+	}
+}
+@media only screen and (min-width: 540px) {
+	#discordHeader, #twitterHeader {
+		max-height: 4em;
+		position: relative;
+		top: -4.5em;
+	}
+}
+@media only screen and (min-width: 820px) {
+	#twitterHeader, #discordHeader {
+		position: relative;
+		top: -4.3em;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	#twitterHeader, #discordHeader {
+		position: relative;
+		top: -6em;
+	}
+}
 /* responsive video player sizes in slide navs */
 @media only screen and (max-width: 1240px) {
 	.twitchEmbeds, .youtubeEmbeds {
@@ -310,12 +369,8 @@ li p {
 		height: 300px;
 		width: 400px;
 	}
-}@media only screen and (max-width: 400px) {
-	.twitchEmbeds, .youtubeEmbeds {
-		height: 200px;
-		width: 300px;
-	}
 }
+
 /*@media only screen 
 and (max-device-width : 830px)  
 and (orientation : landscape) {
