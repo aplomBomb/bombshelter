@@ -46,11 +46,12 @@ ul {
 }
 li {
 	align-content: center;
+	
 }
 li p {
 	position: relative;
 	top: 40%;
-	left: 18%;
+	left: 19%;
 	width: 65%;
 	font-size: 1.8em;
 	font-family: "Sigmar One", cursive;
@@ -75,10 +76,11 @@ li p {
 
 #discordHeader {
 	max-height: 4em;
-	
+	margin-left: 15%;
 }
 #twitterHeader {
 	max-height: 4em;
+	margin-right: 15%;
 }
 #contactBox {
 	display: flex;
@@ -247,7 +249,7 @@ li p {
 	width: 0vw;
 }
 .noscroll {
-	overflow: hidden;
+	overflow-y: hidden;
 	position: relative;
 	height: 100%;
 }
