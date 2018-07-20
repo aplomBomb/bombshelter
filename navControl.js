@@ -16,7 +16,7 @@ function closeNavLeft() {
 function openNavLeft() {
 // disable scrolling of body when slide is out//
     document.getElementById("bod").className = "noscroll";
-
+    
     document.getElementById("twitchIcon").style.transform = "rotate(360deg)";
 
     // when left slide is opened make sure right slide closes//
@@ -30,6 +30,7 @@ function openNavLeft() {
     document.getElementById("twitchIconClose").style.transitionDelay =".5s";
     document.getElementById("twitchIconClose").style.transform = "scale(1.6, 1.6)";
     document.getElementById("twitchIconClose").style.left = "75vw";
+    document.querySelectorAll("html").style.position = "fixed";
 }
 
 // Function that handles the nav slide when the right slide close button is pressed//
