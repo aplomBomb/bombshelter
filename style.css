@@ -376,9 +376,22 @@ li p {
 		width: 400px;
 	}
 }
+@media only screen and (min-width: 1600px) {
+	.twitchEmbeds, .youtubeEmbeds {
+		height: 720px;
+		width: 1280px;
+	}
+}
+@media only screen and (min-width: 2100px) {
+	.twitchEmbeds, .youtubeEmbeds {
+		height: 1080px;
+		width: 1920px;
+	}
+}
 /* Mobile Landscape Queries */
 @media only screen 
 and (min-device-width : 550px)  
+and (max-device-height :350px)
 and (orientation : landscape) {
 	#pic1 {
 		margin-top: 6em;
