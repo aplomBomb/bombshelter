@@ -205,7 +205,7 @@ li p {
 }
 .leftSideNav #twitchIconClose {
 	position: fixed;
-	left: -20vw;
+	left: -50vw;
 	top: 50vh;
 	max-height: 3em;
 	margin: 0;
@@ -233,7 +233,7 @@ li p {
 .rightSideNav #youtubeIconClose {
 	position: fixed;
 	top: 50vh;
-	right: -12em;
+	right: -50em;
 	max-height: 3em;
 	margin: 0;
 	z-index: 200;

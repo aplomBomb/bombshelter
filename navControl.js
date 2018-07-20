@@ -6,7 +6,7 @@ function closeNavLeft() {
 
     document.getElementById("twitchIconClose").style.transitionDelay = "0s";
     document.getElementById("twitchIconClose").style.transform = "scale(1, 1)";
-    document.getElementById("twitchIconClose").style.left = "-10vw";
+    document.getElementById("twitchIconClose").style.left = "-50vw";
     document.getElementById("twitchIcon").style.transform = "rotate(-360deg)";
     document.getElementById("twitchBladeOpen").style.width ="0vw";
     
@@ -21,7 +21,7 @@ function openNavLeft() {
     // when left slide is opened make sure right slide closes//
     document.getElementById("youtubeBladeOpen").style.width ="0vw";
     document.getElementById("youtubeIconClose").style.transitionDelay = "0s";
-    document.getElementById("youtubeIconClose").style.right = "-12em";
+    document.getElementById("youtubeIconClose").style.right = "-50em";
 
     document.getElementById("twitchBladeOpen").style.position = "fixed";
     document.getElementById("twitchBladeOpen").style.left = "0";
@@ -39,7 +39,7 @@ function closeNavRight() {
     document.getElementById("youtubeIcon").style.transform = "rotate(360deg)";
     document.getElementById("youtubeIconClose").style.transitionDelay = "0s";
     document.getElementById("youtubeIconClose").style.transform = "scale(1, 1)"
-    document.getElementById("youtubeIconClose").style.right = "-12em";
+    document.getElementById("youtubeIconClose").style.right = "-50em";
     document.getElementById("youtubeBladeOpen").style.width ="0vw";
 }
 
@@ -54,7 +54,7 @@ function openNavRight() {
     document.getElementById("twitchBladeOpen").style.width ="0vw";
     document.getElementById("twitchIconClose").style.transitionDelay = "0s";
     document.getElementById("twitchIconClose").style.transform = "scale(1, 1)";
-    document.getElementById("twitchIconClose").style.left = "-10vw";
+    document.getElementById("twitchIconClose").style.left = "-50vw";
 
     document.getElementById("youtubeBladeOpen").style.position = "fixed";
     document.getElementById("youtubeBladeOpen").style.right = "0";
