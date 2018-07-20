@@ -309,7 +309,14 @@ li p {
 		width: 400px;
 	}
 }
-@media only screen and (orientation : landscape) {
+@media only screen 
+and (max-device-width : 830px)  
+and (orientation : landscape) {
+	#title, #background {
+		display: none;
+	}
+}
+/*@media only screen and (orientation : landscape) {
 	#title, #background {
 		display: none;
 	}
